@@ -1,5 +1,5 @@
 {
-	"name": "test-rollup-plugin-postcss-modules",
+	"name": "rollup-plugin-postcss-modules-example",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
