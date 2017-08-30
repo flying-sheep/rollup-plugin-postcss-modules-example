@@ -1,0 +1,24 @@
+{
+	"name": "test-rollup-plugin-postcss-modules",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c"
+	},
+	"author": "Philipp A.",
+	"license": "GPL-3.0",
+	"dependencies": {
+		"@types/react": "^16.0.5",
+		"@types/react-dom": "^15.5.4",
+		"autoprefixer": "^7.1.3",
+		"glob": "^7.1.2",
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1",
+		"rollup": "^0.49.2",
+		"rollup-plugin-postcss-modules": "^1.0.7",
+		"rollup-plugin-typescript2": "^0.5.2",
+		"tslib": "^1.7.1",
+		"typescript": "^2.5.1"
+	}
+}
