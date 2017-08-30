@@ -16,7 +16,7 @@
 		"react": "^15.6.1",
 		"react-dom": "^15.6.1",
 		"rollup": "^0.49.2",
-		"rollup-plugin-postcss-modules": "^1.0.7",
+		"rollup-plugin-postcss-modules": "^1.0.8",
 		"rollup-plugin-typescript2": "^0.5.2",
 		"tslib": "^1.7.1",
 		"typescript": "^2.5.1"

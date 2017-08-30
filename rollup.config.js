@@ -21,6 +21,8 @@ export default {
 		file: 'dist/bundle.js',
 		format: 'iife',
 	},
+	// using script tags instead of more rollup plugins for this demo
+	globals: ['React', 'ReactDOM'],
 	plugins: [
 		postcss({
 			/* `extract: true` should extract to `${basename(dest, '.js')}.css`, but is currently broken:
