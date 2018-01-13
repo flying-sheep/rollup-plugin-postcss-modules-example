@@ -30,7 +30,7 @@ export default {
 			extract: 'dist/bundle.css',
 			plugins: [autoprefixer()],
 			writeDefinitions: true,
-			// postcssModulesOptions: { ... }
+			// modules: { ... }
 		}),
 		typescript(),
 	],
