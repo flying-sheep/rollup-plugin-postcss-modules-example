@@ -9,16 +9,16 @@
 	"author": "Philipp A.",
 	"license": "GPL-3.0",
 	"dependencies": {
-		"@types/react": "^16.0.5",
-		"@types/react-dom": "^15.5.4",
-		"autoprefixer": "^7.1.3",
+		"@types/react": "^16.0.34",
+		"@types/react-dom": "^16.0.3",
+		"autoprefixer": "^7.2.5",
 		"glob": "^7.1.2",
-		"react": "^15.6.1",
-		"react-dom": "^15.6.1",
-		"rollup": "^0.49.2",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0",
+		"rollup": "^0.54.0",
 		"rollup-plugin-postcss-modules": "^1.0.8",
-		"rollup-plugin-typescript2": "^0.5.2",
-		"tslib": "^1.7.1",
-		"typescript": "^2.5.1"
+		"rollup-plugin-typescript2": "^0.9.0",
+		"tslib": "^1.8.1",
+		"typescript": "^2.6.2"
 	}
 }

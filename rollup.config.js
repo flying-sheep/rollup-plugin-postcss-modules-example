@@ -9,11 +9,11 @@ import glob from 'glob'
 
 /* initialize CSS files because of a catch-22 situation:
    https://github.com/rollup/rollup/issues/1404 */
-for (const css of glob.sync('src/**/*.css')) {
+glob.sync('src/**/*.css').forEach((css) => {  // Use forEach because https://github.com/rollup/rollup/issues/1873
 	const definition = `${css}.d.ts`
 	if (!fs.existsSync(definition))
 		fs.writeFileSync(definition, 'const mod: { [cls: string]: string }\nexport default mod\n')
-}
+})
 
 export default {
 	input: 'src/index.tsx',
@@ -22,7 +22,11 @@ export default {
 		format: 'iife',
 	},
 	// using script tags instead of more rollup plugins for this demo
-	globals: ['React', 'ReactDOM'],
+	external: ['react', 'react-dom'],
+	globals: {
+		'react': 'React',
+		'react-dom': 'ReactDOM',
+	},
 	plugins: [
 		postcss({
 			/* `extract: true` should extract to `${basename(dest, '.js')}.css`, but is currently broken:
