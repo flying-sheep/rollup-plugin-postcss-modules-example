@@ -1,6 +1,4 @@
-/.rpt2_cache/
 /.vscode/
 /dist/
 /node_modules/
-/package-lock.json
 /src/**/*.css.d.ts
