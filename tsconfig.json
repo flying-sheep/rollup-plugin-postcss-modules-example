@@ -7,7 +7,7 @@
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"sourceMap": true,
-		"jsx": "react-jsx"
+		"jsx": "react"
 	},
 	"include": ["rollup.config.ts", "src/**/*"]
 }

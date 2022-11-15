@@ -5,7 +5,8 @@
 	"type": "module",
 	"main": "dist/bundle.js",
 	"scripts": {
-		"build": "rollup --configPlugin=typescript --config=rollup.config.ts"
+		"build": "rollup --configPlugin=typescript --config=rollup.config.ts",
+		"watch": "yarn build -w"
 	},
 	"author": "Philipp A.",
 	"license": "GPL-3.0",
