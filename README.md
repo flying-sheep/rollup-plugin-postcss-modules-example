@@ -15,6 +15,6 @@ Which references the generated CSS:
 
 ```css
 .my-component_my-class__RPeiE {
- background-color: lightgrey 
+ background-color: lightgrey
 }
 ```
