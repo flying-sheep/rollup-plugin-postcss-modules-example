@@ -2,23 +2,29 @@
 	"name": "rollup-plugin-postcss-modules-example",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"type": "module",
+	"main": "dist/bundle.js",
 	"scripts": {
-		"build": "rollup -c"
+		"build": "rollup --configPlugin=typescript --config=rollup.config.ts",
+		"watch": "yarn build -w"
 	},
 	"author": "Philipp A.",
 	"license": "GPL-3.0",
 	"dependencies": {
-		"@types/react": "^16.0.34",
-		"@types/react-dom": "^16.0.3",
-		"autoprefixer": "^7.2.5",
-		"glob": "^7.1.2",
-		"react": "^16.2.0",
-		"react-dom": "^16.2.0",
-		"rollup": "^0.54.0",
-		"rollup-plugin-postcss-modules": "^1.0.8",
-		"rollup-plugin-typescript2": "^0.9.0",
-		"tslib": "^1.8.1",
-		"typescript": "^2.6.2"
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^9.0.2",
+		"@types/glob": "^8.0.0",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.9",
+		"autoprefixer": "^10.4.13",
+		"glob": "^8.0.3",
+		"postcss": "^8.4.19",
+		"rollup": "^3.3.0",
+		"rollup-plugin-postcss-modules": "^2.1.0",
+		"tslib": "^2.4.1",
+		"typescript": "^4.8.4"
 	}
 }
