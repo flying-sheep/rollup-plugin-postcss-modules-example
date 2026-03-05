@@ -1,8 +1,7 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
+import * as ReactDOM from 'react-dom/client'
 
 import MyComponent from './components/my-component'
 
-document.addEventListener('DOMContentLoaded', () => {
-	ReactDOM.render(<MyComponent/>, document.querySelector('#main'))
-})
+// biome-ignore lint/style/noNonNullAssertion: exists
+const root = ReactDOM.createRoot(document.querySelector('#main')!)
+root.render(<MyComponent />)

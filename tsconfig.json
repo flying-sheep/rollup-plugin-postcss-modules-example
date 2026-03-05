@@ -1,13 +1,13 @@
 {
 	"compilerOptions": {
-		"module": "ES2020",
-		"target": "ES2020",
-		"moduleResolution": "Node",
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "bundler",
 		// to import CJS modules like autoprefixer
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
 		"sourceMap": true,
-		"jsx": "react"
+		"jsx": "react-jsx",
 	},
 	"include": ["rollup.config.ts", "src/**/*"]
 }
