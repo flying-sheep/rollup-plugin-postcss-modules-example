@@ -22,7 +22,7 @@
 		"@types/react-dom": "^19.2.3",
 		"autoprefixer": "^10.4.27",
 		"glob": "^13.0.6",
-		"postcss": "^8.5.8",
+		"postcss": "^8.5.18",
 		"rollup": "^4.59.0",
 		"rollup-plugin-postcss-modules": "^2.1.1",
 		"tslib": "^2.8.1",
